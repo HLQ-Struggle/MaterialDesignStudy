@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/ic_launcher_round"
+        android:orderInCategory="100"
+        android:title="设置" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/ic_launcher_round"
+        android:orderInCategory="101"
+        android:title="分享" />
+    <item
+        android:id="@+id/action_new"
+        android:icon="@mipmap/ic_launcher_round"
+        android:orderInCategory="102"
+        android:title="添加" />
+
+</menu>
