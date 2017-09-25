@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SupportUseActivity"></activity>
+        <activity android:name=".activity.SupportUseActivity" />
+        <activity android:name=".activity.RecycleViewActivity" />
+        <activity android:name=".activity.ChangeRecycleViewActivity"></activity>
     </application>
 
 </manifest>

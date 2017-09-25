@@ -20,4 +20,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, SupportUseActivity.class));
     }
 
+    public void showRecycleView(View view) {
+        startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
+    }
+
+    public void showChangeRecycleView(View view) {
+        startActivity(new Intent(MainActivity.this, ChangeRecycleViewActivity.class));
+    }
+
 }

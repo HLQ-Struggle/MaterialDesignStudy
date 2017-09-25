@@ -18,6 +18,9 @@ import android.widget.Toast;
 
 import com.materialdesignstudy.R;
 
+/**
+ * 兼容性控件使用
+ */
 public class SupportUseActivity extends AppCompatActivity {
 
     private ProgressBar bar;

@@ -12,4 +12,16 @@
         android:onClick="showSupportUse"
         android:text="兼容控件使用" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showRecycleView"
+        android:text="RecycleView使用" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showChangeRecycleView"
+        android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件" />
+
 </LinearLayout>

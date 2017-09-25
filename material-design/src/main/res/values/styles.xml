@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">#fff</item><!-- App字体颜色 -->
+        <item name="colorPrimary">#F06292</item><!-- App主色 -->
+        <item name="colorPrimaryDark">#E91E63</item><!-- 主色，颜色较深，一般可以用于状态栏颜色、底部导航栏 -->
+        <item name="colorAccent">@color/colorPrimaryDark</item><!-- 代表各个控件的基调颜色 -->
+        <item name="android:windowBackground">@color/colorBG</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark
+        </item><!-- 设置虚拟导航栏颜色 5.0新特性 -->
+    </style>
+
+</resources>
