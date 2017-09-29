@@ -21,6 +21,7 @@ public class MyStaggeredAdapter extends RecyclerView.Adapter<MyStaggeredAdapter.
     private final List<String> mStrlist;
     private final List<Integer> mHeightlist;
     private OnItemClickListener mOnItemClickListener;
+    private onItemLongClickListener mOnItemLongClickListener;
 
     public MyStaggeredAdapter(List<String> strList) {
         mStrlist = strList;
@@ -44,13 +45,20 @@ public class MyStaggeredAdapter extends RecyclerView.Adapter<MyStaggeredAdapter.
         holder.tvShow.setBackgroundColor(Color.rgb(100, (int) (Math.random() * 255), (int) (Math.random() * 255)));
         holder.tvShow.setLayoutParams(params);
         holder.tvShow.setText(mStrlist.get(position));
+        // 设置点击事件
         if (mOnItemClickListener != null) {
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mOnItemClickListener.onItemClick(view, position);
-                }
-            });
+//            holder.itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    mOnItemClickListener.onItemClick(view, position);
+//                }
+//            });
+            // 解决item position错位
+            holder.itemView.setOnClickListener(new MyClickListener(position));
+        }
+        // 设置长按事件
+        if (mOnItemLongClickListener != null) {
+            holder.itemView.setOnLongClickListener(new MyLongClickListener(position));
         }
     }
 
@@ -70,6 +78,10 @@ public class MyStaggeredAdapter extends RecyclerView.Adapter<MyStaggeredAdapter.
 //      notifyDataSetChanged();
         // 刷新新增数据位置
         notifyItemInserted(position);
+        // 更新下方所有item position
+        if (position != mStrlist.size()) {
+            notifyItemRangeChanged(position, mStrlist.size() - position);
+        }
     }
 
     /**
@@ -82,6 +94,10 @@ public class MyStaggeredAdapter extends RecyclerView.Adapter<MyStaggeredAdapter.
 //        notifyDataSetChanged();
         // 刷新removed位置数据
         notifyItemRemoved(position);
+        // 更新下方所有item position
+        if (position != mStrlist.size()) {
+            notifyItemRangeChanged(position, mStrlist.size() - position);
+        }
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
@@ -111,6 +127,51 @@ public class MyStaggeredAdapter extends RecyclerView.Adapter<MyStaggeredAdapter.
      */
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.mOnItemClickListener = onItemClickListener;
+    }
+
+    /**
+     * 长按事件
+     */
+    public interface onItemLongClickListener {
+
+        void onItemLongClick(View view, int position);
+
+    }
+
+    public void setOnItemLongClickListener(onItemLongClickListener onItemLongClickListener) {
+        this.mOnItemLongClickListener = onItemLongClickListener;
+    }
+
+    /**
+     * 重写OnClick解决item点击时position可能出现错位bug
+     */
+    class MyClickListener implements View.OnClickListener {
+
+        private int mPosition;
+
+        public MyClickListener(int position) {
+            this.mPosition = position;
+        }
+
+        @Override
+        public void onClick(View v) {
+            mOnItemClickListener.onItemClick(v, mPosition);
+        }
+    }
+
+    class MyLongClickListener implements View.OnLongClickListener {
+
+        private int mPosition;
+
+        public MyLongClickListener(int position) {
+            this.mPosition = position;
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            mOnItemLongClickListener.onItemLongClick(v, mPosition);
+            return true;
+        }
     }
 
 }

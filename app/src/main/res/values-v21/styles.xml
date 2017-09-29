@@ -19,6 +19,7 @@
         <item name="colorAccent">#906292</item>
         <!-- 设置虚拟导航栏背景颜色 ，5.x的新特性-->
         <item name="android:navigationBarColor">@color/colorPrimary_pink</item>
+        <item name="android:listDivider">@drawable/item_divider</item>
     </style>
 
 </resources>

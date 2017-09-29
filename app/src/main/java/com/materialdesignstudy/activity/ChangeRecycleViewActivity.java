@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.activity.adapter.MyRecycleViewAdapter;
 import com.materialdesignstudy.activity.adapter.MyStaggeredAdapter;
+import com.materialdesignstudy.activity.ltem.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +40,7 @@ public class ChangeRecycleViewActivity extends AppCompatActivity {
     }
 
     private List<String> initData() {
-        for (int i = 0; i < 60; i++) {
+        for (int i = 0; i < 58; i++) {
             mStrList.add("item:" + i);
         }
         return mStrList;
@@ -47,18 +48,25 @@ public class ChangeRecycleViewActivity extends AppCompatActivity {
 
     private void initView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.id_change_recycle);
-        // LayoutManager 布局拜访管理器(线性摆放、瀑布流)
+        // LayoutManager 布局摆放管理器(线性摆放、瀑布流)
         mRecyclerView.setLayoutManager(new LinearLayoutManager(selfActivity)); // 默认垂直
         myStaggerAdapter = new MyStaggeredAdapter(initData());
         myStaggerAdapter.setOnItemClickListener(new MyStaggeredAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Toast.makeText(selfActivity,"点击了item："+position,Toast.LENGTH_SHORT).show();
+                Toast.makeText(selfActivity, "点击了item：" + position, Toast.LENGTH_SHORT).show();
+            }
+        });
+        myStaggerAdapter.setOnItemLongClickListener(new MyStaggeredAdapter.onItemLongClickListener() {
+            @Override
+            public void onItemLongClick(View view, int position) {
+                Toast.makeText(selfActivity, "长按了item：" + position, Toast.LENGTH_SHORT).show();
             }
         });
         mRecyclerView.setAdapter(myStaggerAdapter);
         // 设置条目的动画效果
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(selfActivity,LinearLayoutManager.VERTICAL));
     }
 
     /**

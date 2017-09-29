@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.SupportUseActivity" />
         <activity android:name=".activity.RecycleViewActivity" />
-        <activity android:name=".activity.ChangeRecycleViewActivity"></activity>
+        <activity android:name=".activity.ChangeRecycleViewActivity" />
+        <activity android:name=".activity.WrapRecycleViewActivity"></activity>
     </application>
 
 </manifest>
