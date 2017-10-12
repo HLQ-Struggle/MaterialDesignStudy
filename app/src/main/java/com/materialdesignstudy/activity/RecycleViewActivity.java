@@ -7,12 +7,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
 
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.activity.adapter.MyRecycleViewAdapter;
 import com.materialdesignstudy.activity.adapter.MyStaggeredAdapter;
 import com.materialdesignstudy.activity.ltem.DividerGirdDecoration;
-import com.materialdesignstudy.activity.ltem.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,12 +87,9 @@ public class RecycleViewActivity extends AppCompatActivity {
             mRecyclerView.removeItemDecoration(itemDecoration);
         if (!isChange) {
             mRecyclerView.setLayoutManager(new LinearLayoutManager(selfActivity, LinearLayoutManager.HORIZONTAL, false)); // 设置水平
-            itemDecoration = new DividerItemDecoration(selfActivity, LinearLayoutManager.HORIZONTAL);
         } else {
             mRecyclerView.setLayoutManager(new LinearLayoutManager(selfActivity)); // 默认垂直
-            itemDecoration = new DividerItemDecoration(selfActivity, LinearLayoutManager.VERTICAL);
         }
-        mRecyclerView.addItemDecoration(itemDecoration);
         isChange = !isChange;
     }
 

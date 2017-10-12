@@ -80,11 +80,11 @@ public class DividerGirdDecoration extends RecyclerView.ItemDecoration {
         // 偏移量 代表左上右下分别对应上一个的偏移值
         int right = mDivider.getIntrinsicWidth();
         int bottom = mDivider.getIntrinsicHeight();
-        if (isLastCol(itemPosition, parent)) { // 代表当前是最后一列 不绘制右侧
-            right = 0;
-        }
         if (isLastRow(parent)) { // 代表当前是最后一行 不绘制底部
             bottom = 0;
+        }
+        if (isLastCol(itemPosition, parent)) { // 代表当前是最后一列 不绘制右侧
+            right = 0;
         }
         outRect.set(0, 0, right, bottom);
     }
@@ -124,6 +124,11 @@ public class DividerGirdDecoration extends RecyclerView.ItemDecoration {
         return false;
     }
 
+    /**
+     * 获取列数
+     * @param parent
+     * @return
+     */
     private int getSpanCount(RecyclerView parent) {
         RecyclerView.LayoutManager layoutManager = parent.getLayoutManager();
         if (layoutManager instanceof GridLayoutManager) {
