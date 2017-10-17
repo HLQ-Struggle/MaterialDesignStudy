@@ -7,12 +7,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.ListView;
 
 import com.materialdesignstudy.R;
-import com.materialdesignstudy.activity.adapter.MyRecycleViewAdapter;
-import com.materialdesignstudy.activity.adapter.MyStaggeredAdapter;
-import com.materialdesignstudy.activity.ltem.DividerGirdDecoration;
+import com.materialdesignstudy.adapter.MyRecycleViewAdapter;
+import com.materialdesignstudy.adapter.MyStaggeredAdapter;
+import com.materialdesignstudy.ltem.DividerGirdDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.materialdesignstudy.activity.ltem;
+package com.materialdesignstudy.ltem;
 
 import android.content.Context;
 import android.content.res.TypedArray;

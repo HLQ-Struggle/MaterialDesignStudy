@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e("HLQ","---->Main onResume");
+        Log.e("HLQ", "---->Main onResume");
     }
 
     @Override
@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void showChangeRecycleView(View view) {
         startActivity(new Intent(MainActivity.this, ChangeRecycleViewActivity.class));
+    }
+
+    public void addView(View view) {
+        startActivity(new Intent(MainActivity.this, WrapRecycleViewActivity.class));
     }
 
 }

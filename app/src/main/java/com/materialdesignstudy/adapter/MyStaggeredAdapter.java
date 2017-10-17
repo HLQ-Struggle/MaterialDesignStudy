@@ -1,4 +1,4 @@
-package com.materialdesignstudy.activity.adapter;
+package com.materialdesignstudy.adapter;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;

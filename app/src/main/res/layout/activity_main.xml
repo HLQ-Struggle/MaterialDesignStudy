@@ -24,4 +24,10 @@
         android:onClick="showChangeRecycleView"
         android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件以及长按事件" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addView"
+        android:text="RecycleView添加头部和底部" />
+
 </LinearLayout>

@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.materialdesignstudy.R;
-import com.materialdesignstudy.activity.adapter.MyRecycleViewAdapter;
-import com.materialdesignstudy.activity.adapter.MyStaggeredAdapter;
-import com.materialdesignstudy.activity.ltem.DividerItemDecoration;
+import com.materialdesignstudy.adapter.MyRecycleViewAdapter;
+import com.materialdesignstudy.adapter.MyStaggeredAdapter;
+import com.materialdesignstudy.ltem.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
