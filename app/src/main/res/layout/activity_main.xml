@@ -30,4 +30,10 @@
         android:onClick="addView"
         android:text="RecycleView添加头部和底部" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addUseAnim"
+        android:text="RecycleView交互动画" />
+
 </LinearLayout>

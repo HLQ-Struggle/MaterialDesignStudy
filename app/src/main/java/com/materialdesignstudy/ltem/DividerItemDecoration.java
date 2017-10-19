@@ -14,12 +14,12 @@ import android.view.View;
 /**
  * 分割线 Created by HLQ on 2017/9/26
  */
-
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 
     private int mOrientation = LinearLayoutManager.VERTICAL;
 
     private Drawable mDivider;
+
     private int[] attrs = new int[]{android.R.attr.listDivider};
 
     public DividerItemDecoration(Context context, int orientation) {
@@ -30,7 +30,12 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         setOrientation(orientation);
     }
 
+    /**
+     * 设置参数枚举类型 水平 or 垂直
+     * @param orientation
+     */
     public void setOrientation(int orientation) {
+        // 避免传入非法类型
         if (orientation != LinearLayoutManager.HORIZONTAL && orientation != LinearLayoutManager.VERTICAL) {
             throw new IllegalArgumentException("非法参数枚举类型");
         }
@@ -79,13 +84,18 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
      * @param parent
      */
     private void drawVertical(Canvas c, RecyclerView parent) {
+        // 考虑父容器padding值
         int left = parent.getPaddingLeft();
+        // 绘制右侧时需要减去右侧padding值
         int right = parent.getWidth() - parent.getPaddingRight();
+        // 获取父容器下子控件个数 也就是item个数
         int childCount = parent.getChildCount();
         for (int i = 0; i < childCount; i++) {
             View child = parent.getChildAt(i);
             RecyclerView.LayoutParams params = (LayoutParams) child.getLayoutParams();
+            // 高度等于子控件底部加margin加y轴值
             int top = child.getBottom() + params.bottomMargin + Math.round(ViewCompat.getTranslationY(child));
+            // 底部等于高度加当前实际高度
             int bottom = top + mDivider.getIntrinsicHeight();
             // 设置绘制位置
             mDivider.setBounds(left, top, right, bottom);

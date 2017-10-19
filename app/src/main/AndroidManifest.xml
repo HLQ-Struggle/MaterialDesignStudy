@@ -19,7 +19,8 @@
         <activity android:name=".activity.SupportUseActivity" />
         <activity android:name=".activity.RecycleViewActivity" />
         <activity android:name=".activity.ChangeRecycleViewActivity" />
-        <activity android:name=".activity.WrapRecycleViewActivity"></activity>
+        <activity android:name=".activity.WrapRecycleViewActivity" />
+        <activity android:name=".itemtouch.ItemTouchActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.materialdesignstudy.R;
+import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     public void showSupportUse(View view) {
@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void addView(View view) {
         startActivity(new Intent(MainActivity.this, WrapRecycleViewActivity.class));
+    }
+
+    public void addUseAnim(View view) {
+        startActivity(new Intent(MainActivity.this, ItemTouchActivity.class));
     }
 
 }

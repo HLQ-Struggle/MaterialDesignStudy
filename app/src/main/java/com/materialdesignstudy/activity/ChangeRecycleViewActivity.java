@@ -1,5 +1,6 @@
 package com.materialdesignstudy.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -20,7 +21,7 @@ import java.util.List;
 /**
  * 高内聚 低耦合
  */
-public class ChangeRecycleViewActivity extends AppCompatActivity {
+public class ChangeRecycleViewActivity extends Activity {
 
     private ChangeRecycleViewActivity selfActivity = ChangeRecycleViewActivity.this;
 

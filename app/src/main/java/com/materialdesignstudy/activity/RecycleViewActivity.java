@@ -11,7 +11,9 @@ import android.view.View;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.adapter.MyRecycleViewAdapter;
 import com.materialdesignstudy.adapter.MyStaggeredAdapter;
+import com.materialdesignstudy.itemtouch.ItemAdapter;
 import com.materialdesignstudy.ltem.DividerGirdDecoration;
+import com.materialdesignstudy.ltem.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
