@@ -23,6 +23,7 @@
         android:title="交友">
         <menu>
             <item
+                android:id="@+id/action_call_me"
                 android:icon="@android:drawable/ic_menu_call"
                 android:title="Call Me" />
             <item
@@ -30,4 +31,17 @@
                 android:title="Take Pic" />
         </menu>
     </item>
+
+    <group android:id="@+id/id_group1">
+
+        <item
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:orderInCategory="100"
+            android:title="如果爱你" />
+        <item
+            android:icon="@android:drawable/ic_menu_help"
+            android:orderInCategory="100"
+            android:title="是种罪" />
+    </group>
+
 </menu>
