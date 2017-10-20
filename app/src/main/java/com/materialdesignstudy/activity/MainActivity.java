@@ -9,6 +9,7 @@ import android.view.View;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
+import com.materialdesignstudy.navigationview.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void userMDDrawerLayout(View view) {
         startActivity(new Intent(MainActivity.this, DrawerLayoutActivity.class));
+    }
+
+    public void useNavigationView(View view) {
+        startActivity(new Intent(MainActivity.this, NavigationActivity.class));
     }
 
 }

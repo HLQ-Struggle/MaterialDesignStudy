@@ -21,7 +21,8 @@
         <activity android:name=".activity.ChangeRecycleViewActivity" />
         <activity android:name=".activity.WrapRecycleViewActivity" />
         <activity android:name=".itemtouch.ItemTouchActivity" />
-        <activity android:name=".drawerlayout.DrawerLayoutActivity"/>
+        <activity android:name=".drawerlayout.DrawerLayoutActivity" />
+        <activity android:name=".navigationview.NavigationActivity"></activity>
     </application>
 
 </manifest>

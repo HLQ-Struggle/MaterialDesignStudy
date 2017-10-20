@@ -34,7 +34,7 @@ public class DrawerLayoutActivity extends ActionBarActivity {
         // 同步状态
         drawerToggle.syncState();
         // 设置侧滑监听
-//        mDrawerLayout.setDrawerListener(drawerToggle);
+        mDrawerLayout.setDrawerListener(drawerToggle);
 
         mDrawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
