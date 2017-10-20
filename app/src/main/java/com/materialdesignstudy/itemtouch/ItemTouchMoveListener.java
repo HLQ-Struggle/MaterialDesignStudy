@@ -3,7 +3,6 @@ package com.materialdesignstudy.itemtouch;
 /**
  * Created by HLQ on 2017/10/18
  */
-
 public interface ItemTouchMoveListener {
 
     /**

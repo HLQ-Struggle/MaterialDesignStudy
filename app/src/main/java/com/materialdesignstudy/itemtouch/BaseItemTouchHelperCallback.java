@@ -103,4 +103,5 @@ public class BaseItemTouchHelperCallback extends ItemTouchHelper.Callback {
 
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
     }
+
 }

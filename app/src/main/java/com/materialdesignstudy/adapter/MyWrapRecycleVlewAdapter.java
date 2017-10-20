@@ -11,7 +11,7 @@ import com.materialdesignstudy.R;
 import java.util.List;
 
 /**
- * Created by HLQ on 2017/10/17 0017.
+ * Created by HLQ on 2017/10/17
  */
 
 public class MyWrapRecycleVlewAdapter extends RecyclerView.Adapter<MyWrapRecycleVlewAdapter.ViewHolder> {

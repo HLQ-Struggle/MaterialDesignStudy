@@ -10,7 +10,6 @@ import java.util.ArrayList;
  * Created by HLQ on 2017/10/12
  * 模仿ListView添加头部时 中间的adapter
  */
-
 public class HeaderViewRecyclerAdapter extends RecyclerView.Adapter {
 
     private RecyclerView.Adapter mAdapter;
@@ -19,6 +18,8 @@ public class HeaderViewRecyclerAdapter extends RecyclerView.Adapter {
     private ArrayList<View> mFooterViewInfos;
 
     public HeaderViewRecyclerAdapter(ArrayList<View> headerViewInfos, ArrayList<View> footerViewInfos, RecyclerView.Adapter adapter) {
+        // 这里面的逻辑和ListView中很相似，不过相对来说我们这里更为简单一些
+        // 这里 我们只需要考虑 三种情况即可 头布局 正常body 尾布局
         mAdapter = adapter;
         if (headerViewInfos == null) {
             mHeaderViewInfos = new ArrayList<>();

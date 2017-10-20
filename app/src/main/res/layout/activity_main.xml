@@ -36,4 +36,10 @@
         android:onClick="addUseAnim"
         android:text="RecycleView交互动画" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="userMDDrawerLayout"
+        android:text="MaterialDesign侧滑" />
+
 </LinearLayout>

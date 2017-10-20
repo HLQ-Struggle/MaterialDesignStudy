@@ -16,7 +16,6 @@ import java.util.List;
 /**
  * Created by HLQ on 2017/10/17
  */
-
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> implements ItemTouchMoveListener {
 
     private StartDragListener mStartDragListener;

@@ -10,6 +10,10 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <!-- Application theme. -->
@@ -18,8 +22,8 @@
         <item name="android:textColor">@color/mytextcolor</item>
         <item name="colorPrimary">@color/colorPrimary_pink</item>
         <item name="colorPrimaryDark">@color/colorPrimary_pinkDark</item>
-<!--         <item name="android:windowBackground">@color/background</item> -->
-<!--         <item name="colorAccent">#906292</item> -->
+        <!--         <item name="android:windowBackground">@color/background</item> -->
+        <!--         <item name="colorAccent">#906292</item> -->
     </style>
 
 </resources>

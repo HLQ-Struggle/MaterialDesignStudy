@@ -50,4 +50,5 @@ public class ItemTouchActivity extends AppCompatActivity implements StartDragLis
     public void onStartDrag(ItemAdapter.ViewHolder viewHolder) {
         helper.startDrag(viewHolder);
     }
+
 }
