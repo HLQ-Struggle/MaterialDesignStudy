@@ -23,7 +23,10 @@
         <activity android:name=".itemtouch.ItemTouchActivity" />
         <activity android:name=".drawerlayout.DrawerLayoutActivity" />
         <activity android:name=".navigationview.NavigationActivity" />
-        <activity android:name=".snackbar.SnackBarActivity"></activity>
+        <activity android:name=".snackbar.SnackBarActivity" />
+        <activity android:name=".complexrecycler.itemone.ComplexOneActivity" />
+        <activity android:name=".complexrecycler.itemtwo.ComplexTwoActivity" />
+        <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity"></activity>
     </application>
 
 </manifest>

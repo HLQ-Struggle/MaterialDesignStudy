@@ -1,51 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.materialdesignstudy.activity.MainActivity">
+    android:layout_height="match_parent">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="showSupportUse"
-        android:text="兼容控件使用" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.materialdesignstudy.activity.MainActivity">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="showRecycleView"
-        android:text="RecycleView使用" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSupportUse"
+            android:text="兼容控件使用" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="showChangeRecycleView"
-        android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件以及长按事件" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showRecycleView"
+            android:text="RecycleView使用" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="addView"
-        android:text="RecycleView添加头部和底部" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showChangeRecycleView"
+            android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件以及长按事件" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="addUseAnim"
-        android:text="RecycleView交互动画" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addView"
+            android:text="RecycleView添加头部和底部" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="userMDDrawerLayout"
-        android:text="MaterialDesign侧滑" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addUseAnim"
+            android:text="RecycleView交互动画" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="useNavigationView"
-        android:text="NavigationView使用" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useRecyclerComplex"
+            android:text="RecycleView实现复杂布局" />
 
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useRecyclerComplexListAndGird"
+            android:text="RecycleView实现复杂布局之List和Gird混排显示" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useRecyclerComplexDiffModel"
+            android:text="RecycleView实现复杂布局之不同Model如何优雅实现" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="userMDDrawerLayout"
+            android:text="MaterialDesign侧滑" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useNavigationView"
+            android:text="NavigationView使用" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useSnackBar"
+            android:text="SnackBar使用" />
+
+    </LinearLayout>
+</ScrollView>

@@ -7,9 +7,13 @@ import android.util.Log;
 import android.view.View;
 
 import com.materialdesignstudy.R;
+import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
+import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
+import com.materialdesignstudy.complexrecycler.itemtwo.ComplexTwoActivity;
 import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
+import com.materialdesignstudy.snackbar.SnackBarActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,12 +49,28 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, ItemTouchActivity.class));
     }
 
+    public void useRecyclerComplex(View view) {
+        startActivity(new Intent(MainActivity.this, ComplexOneActivity.class));
+    }
+
+    public void useRecyclerComplexListAndGird(View view) {
+        startActivity(new Intent(MainActivity.this, ComplexTwoActivity.class));
+    }
+
+    public void useRecyclerComplexDiffModel(View view) {
+        startActivity(new Intent(MainActivity.this, ComplexThreeActivity.class));
+    }
+
     public void userMDDrawerLayout(View view) {
         startActivity(new Intent(MainActivity.this, DrawerLayoutActivity.class));
     }
 
     public void useNavigationView(View view) {
         startActivity(new Intent(MainActivity.this, NavigationActivity.class));
+    }
+
+    public void useSnackBar(View view) {
+        startActivity(new Intent(MainActivity.this, SnackBarActivity.class));
     }
 
 }
