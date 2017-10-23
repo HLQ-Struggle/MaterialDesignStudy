@@ -36,25 +36,6 @@ public class ComplexThreeActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        List<DataModel> dataList = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
-            int type; // 随机type
-            if (i < 5 || (i > 15 && i < 20)) {
-                type = 1;
-            } else if (i < 10 || i > 20) {
-                type = 2;
-            } else {
-                type = 3;
-            }
-            DataModel dataModel = new DataModel();
-            dataModel.avatarColor = mColor[type - 1];
-            dataModel.type = type;
-            dataModel.name = "name" + i;
-            dataModel.content = "content:" + i;
-            dataModel.contentColor = mColor[(type + 1) % 3];
-            dataList.add(dataModel);
-        }
-
         List<DataModelOne> oneList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             DataModelOne dataModel = new DataModelOne();

@@ -8,7 +8,6 @@ import com.materialdesignstudy.complexrecycler.itemone.DataModel;
 /**
  * Created by HLQ on 2017/10/22
  */
-
 public abstract class TypeAbstractViewHolder<T> extends RecyclerView.ViewHolder {
 
     public TypeAbstractViewHolder(View itemView) {

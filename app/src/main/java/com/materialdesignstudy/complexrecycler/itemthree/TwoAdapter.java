@@ -16,7 +16,6 @@ import java.util.Map;
 /**
  * Created by HLQ on 2017/10/22
  */
-
 public class TwoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public static final int TYPE_ONE = 1;
@@ -24,8 +23,8 @@ public class TwoAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static final int TYPE_THREE = 3;
 
     private LayoutInflater mLayoutInflater;
-    private List<Integer> mTypes = new ArrayList<>();
-    private Map<Integer, Integer> mPositions = new HashMap<>();
+    private List<Integer> mTypes = new ArrayList<>(); // 存放type
+    private Map<Integer, Integer> mPositions = new HashMap<>(); // 存放type下包含数据itemCount
     private List<DataModelOne> mOneList = new ArrayList<>();
     private List<DataModelTwo> mTwoList = new ArrayList<>();
     private List<DataModelThree> mThreeList = new ArrayList<>();
