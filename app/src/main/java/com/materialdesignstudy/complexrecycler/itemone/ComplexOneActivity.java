@@ -49,7 +49,7 @@ public class ComplexOneActivity extends AppCompatActivity {
     }
 
     private void initItem() {
-        mRecyclerView = findViewById(R.id.id_recy);
+        mRecyclerView = (RecyclerView) findViewById(R.id.id_recy);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mOneAdapter = new OneAdapter(this);
         mRecyclerView.setAdapter(mOneAdapter);

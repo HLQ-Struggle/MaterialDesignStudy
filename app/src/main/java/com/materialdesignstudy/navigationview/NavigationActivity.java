@@ -21,7 +21,7 @@ public class NavigationActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mNavigationView = findViewById(R.id.id_nv);
+        mNavigationView = (NavigationView) findViewById(R.id.id_nv);
         View headView = mNavigationView.getChildAt(0);
         headView.findViewById(R.id.id_nv_head_img).setOnClickListener(new View.OnClickListener() {
             @Override

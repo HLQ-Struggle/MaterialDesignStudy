@@ -2,8 +2,9 @@ package com.materialdesignstudy.drawerlayout;
 
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
+
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
@@ -14,7 +15,7 @@ import com.materialdesignstudy.R;
  * MaterialDesign 侧滑DrawerLayout create by heliquan at 2017年10月19日
  * 源自于v4包中 继承ViewGroup
  */
-public class DrawerLayoutActivity extends ActionBarActivity {
+public class DrawerLayoutActivity extends AppCompatActivity {
 
     private Toolbar mToolBar;
     private DrawerLayout mDrawerLayout;
@@ -24,8 +25,8 @@ public class DrawerLayoutActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_layout);
 
-        mToolBar = findViewById(R.id.id_toolbar);
-        mDrawerLayout = findViewById(R.id.i_drawerlayout);
+        mToolBar = (Toolbar) findViewById(R.id.id_toolbar);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.i_drawerlayout);
 
         // 将ActionBar替换成toolbar
         setSupportActionBar(mToolBar);

@@ -61,7 +61,7 @@ public class ComplexTwoActivity extends AppCompatActivity {
     }
 
     private void initItem() {
-        mRecyclerView = findViewById(R.id.id_recy);
+        mRecyclerView = (RecyclerView) findViewById(R.id.id_recy);
         // 更换显示布局样式为GirdLayoutManager
         final GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {

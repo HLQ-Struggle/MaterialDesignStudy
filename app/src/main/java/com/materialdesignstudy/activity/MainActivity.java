@@ -14,6 +14,7 @@ import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
 import com.materialdesignstudy.snackbar.SnackBarActivity;
+import com.materialdesignstudy.textinput.TextInputActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useSnackBar(View view) {
         startActivity(new Intent(MainActivity.this, SnackBarActivity.class));
+    }
+
+    public void useTextInputLayout(View view) {
+        startActivity(new Intent(MainActivity.this, TextInputActivity.class));
     }
 
 }

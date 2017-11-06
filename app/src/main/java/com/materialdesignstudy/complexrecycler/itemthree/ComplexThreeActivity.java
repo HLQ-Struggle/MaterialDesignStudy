@@ -9,7 +9,6 @@ import android.view.View;
 
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.complexrecycler.itemone.DataModel;
-import com.materialdesignstudy.complexrecycler.itemone.OneAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +64,7 @@ public class ComplexThreeActivity extends AppCompatActivity {
     }
 
     private void initItem() {
-        mRecyclerView = findViewById(R.id.id_recy);
+        mRecyclerView = (RecyclerView) findViewById(R.id.id_recy);
         final GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override

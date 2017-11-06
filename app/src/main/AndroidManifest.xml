@@ -26,7 +26,8 @@
         <activity android:name=".snackbar.SnackBarActivity" />
         <activity android:name=".complexrecycler.itemone.ComplexOneActivity" />
         <activity android:name=".complexrecycler.itemtwo.ComplexTwoActivity" />
-        <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity"></activity>
+        <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity" />
+        <activity android:name=".textinput.TextInputActivity"></activity>
     </application>
 
 </manifest>
