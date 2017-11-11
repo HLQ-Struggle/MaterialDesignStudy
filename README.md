@@ -13,3 +13,13 @@
 地址：http://blog.csdn.net/u012400885/article/details/78300244
 ## Android Study Material Design 五 之：自定义Toast以及玩转SnackBar
 地址：http://blog.csdn.net/u012400885/article/details/78300256
+## Android Study Material Design 五 番外篇 之：深入分析SnackBar源码
+地址：http://blog.csdn.net/u012400885/article/details/78325154
+## Android Study Material Design 六 之：TextInputLayout学习及分析部分源码
+地址：http://blog.csdn.net/u012400885/article/details/78454449
+
+## 赞赏
+
+如果感觉LZ写的对你有所帮助，不妨赞助LZ喝点东西~哇咔咔
+
+![](https://github.com/HLQ-Struggle/MaterialDesignStudy/blob/master/image/hlq-money.jpg)
