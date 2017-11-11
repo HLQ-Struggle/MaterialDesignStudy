@@ -27,7 +27,8 @@
         <activity android:name=".complexrecycler.itemone.ComplexOneActivity" />
         <activity android:name=".complexrecycler.itemtwo.ComplexTwoActivity" />
         <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity" />
-        <activity android:name=".textinput.TextInputActivity"></activity>
+        <activity android:name=".textinput.TextInputActivity" />
+        <activity android:name=".toolbar.ToolBarActivity"></activity>
     </application>
 
 </manifest>

@@ -25,9 +25,9 @@ public class TextInputActivity extends AppCompatActivity {
 
     private void initView() {
         mTextInputLayout = (TextInputLayout) findViewById(R.id.id_text_input);
-        mTextInputLayout.setErrorEnabled(true);
         // 开启计数
         mTextInputLayout.setCounterEnabled(true);
+        // 设置合法最大输入
         mTextInputLayout.setCounterMaxLength(6);
         mTextInputLayout.getEditText().addTextChangedListener(new MinLengthTextWatcher(mTextInputLayout, "密码只能6位数"));
     }

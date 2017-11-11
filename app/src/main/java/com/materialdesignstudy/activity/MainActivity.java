@@ -15,6 +15,7 @@ import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
 import com.materialdesignstudy.snackbar.SnackBarActivity;
 import com.materialdesignstudy.textinput.TextInputActivity;
+import com.materialdesignstudy.toolbar.ToolBarActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -76,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useTextInputLayout(View view) {
         startActivity(new Intent(MainActivity.this, TextInputActivity.class));
+    }
+
+    public void useToolBar(View view) {
+        startActivity(new Intent(MainActivity.this, ToolBarActivity.class));
     }
 
 }
