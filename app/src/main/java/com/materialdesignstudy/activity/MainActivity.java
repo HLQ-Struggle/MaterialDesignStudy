@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.materialdesignstudy.paletter.PaletteActivity;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
 import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
@@ -81,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useToolBar(View view) {
         startActivity(new Intent(MainActivity.this, ToolBarActivity.class));
+    }
+
+    public void usePalette(View view) {
+        startActivity(new Intent(MainActivity.this, PaletteActivity.class));
     }
 
 }

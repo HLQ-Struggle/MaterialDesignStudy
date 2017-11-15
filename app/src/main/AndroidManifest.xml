@@ -28,7 +28,8 @@
         <activity android:name=".complexrecycler.itemtwo.ComplexTwoActivity" />
         <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity" />
         <activity android:name=".textinput.TextInputActivity" />
-        <activity android:name=".toolbar.ToolBarActivity"></activity>
+        <activity android:name=".toolbar.ToolBarActivity" />
+        <activity android:name=".paletter.PaletteActivity"></activity>
     </application>
 
 </manifest>
