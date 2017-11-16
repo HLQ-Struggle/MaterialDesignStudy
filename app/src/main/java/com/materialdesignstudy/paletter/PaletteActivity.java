@@ -93,19 +93,24 @@ public class PaletteActivity extends AppCompatActivity {
 
     }
 
-    private Drawable getImageViewShape(int startRGB, int endRGB){
+    /**
+     * 设置圆角弧度以及渐变
+     *
+     * @param startRGB
+     * @param endRGB
+     * @return
+     */
+    private Drawable getImageViewShape(int startRGB, int endRGB) {
         GradientDrawable shape = new GradientDrawable(GradientDrawable.Orientation.TL_BR
-                ,new int[]{startRGB,endRGB});
+                , new int[]{startRGB, endRGB});
         shape.setShape(GradientDrawable.RECTANGLE);
-        //设置渐变方式
         shape.setGradientType(GradientDrawable.LINEAR_GRADIENT);
-        //圆角
         shape.setCornerRadius(8);
         return shape;
     }
 
     private void initXX() {
-        ImageView iv=(ImageView) findViewById(R.id.iv_bank);
+        ImageView iv = (ImageView) findViewById(R.id.iv_bank);
         Bitmap bitmap = ((BitmapDrawable) iv.getDrawable()).getBitmap();
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @Override
@@ -115,14 +120,14 @@ public class PaletteActivity extends AppCompatActivity {
                 LinearLayout ll = (LinearLayout) findViewById(R.id.ll_bank);
                 ((TextView) findViewById(R.id.tv_bank)).setTextColor(lightVibrantSwatch.getTitleTextColor());
                 ll.setBackgroundColor(palette.getDarkVibrantColor(Color.BLUE));
-                ll.setBackground(getImageViewShape(palette.getVibrantColor(Color.BLUE),palette.getDarkVibrantColor(Color.BLUE)));
+                ll.setBackground(getImageViewShape(palette.getVibrantColor(Color.BLUE), palette.getDarkVibrantColor(Color.BLUE)));
             }
 
         });
     }
 
     private void initZS() {
-        ImageView iv=(ImageView) findViewById(R.id.iv_zs);
+        ImageView iv = (ImageView) findViewById(R.id.iv_zs);
         Bitmap bitmap = ((BitmapDrawable) iv.getDrawable()).getBitmap();
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @Override
@@ -189,23 +194,26 @@ public class PaletteActivity extends AppCompatActivity {
 
     /**
      * 1101 0111 1000 1011
-     * 依次代表 a r g b
+     * 依次代表 a r g b 通过位移 得出实际结果
      *
      * @param percent 百分比 比例
      * @param rgb
      * @return
      */
     private int getTranslucentColor(float percent, int rgb) {
+        // 方式一：使用谷歌推荐方式 效率更高
         // 关于运算 可以直接源码查看
 //        int alpha = rgb >>> 24;
 //        int red = rgb >> 16 & 0xff;
 //        int green = rgb >> 8 & 0xff;
 //        int blue = rgb & 0xff;
 
+        // 方式二：使用提供Api
         int alpha = Color.alpha(rgb);
         int blue = Color.blue(rgb);
         int red = Color.red(rgb);
         int green = Color.green(rgb);
+
         alpha = Math.round(alpha * percent);
         return Color.argb(alpha, red, green, blue);
     }

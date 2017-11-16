@@ -29,7 +29,9 @@
         <activity android:name=".complexrecycler.itemthree.ComplexThreeActivity" />
         <activity android:name=".textinput.TextInputActivity" />
         <activity android:name=".toolbar.ToolBarActivity" />
-        <activity android:name=".paletter.PaletteActivity"></activity>
+        <activity android:name=".paletter.PaletteActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".tablayout.BottomTabActivity"></activity>
     </application>
 
 </manifest>

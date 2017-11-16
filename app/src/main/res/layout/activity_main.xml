@@ -94,5 +94,17 @@
             android:onClick="usePalette"
             android:text="Palette调色板使用" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useTableLayout"
+            android:text="TableLayout使用" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useBottomTableLayout"
+            android:text="BottomTableLayout使用" />
+
     </LinearLayout>
 </ScrollView>

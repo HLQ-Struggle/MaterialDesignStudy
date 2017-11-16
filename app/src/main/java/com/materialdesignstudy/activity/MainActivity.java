@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.materialdesignstudy.paletter.PaletteActivity;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
 import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
@@ -14,7 +13,10 @@ import com.materialdesignstudy.complexrecycler.itemtwo.ComplexTwoActivity;
 import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
+import com.materialdesignstudy.paletter.PaletteActivity;
 import com.materialdesignstudy.snackbar.SnackBarActivity;
+import com.materialdesignstudy.tablayout.BottomTabActivity;
+import com.materialdesignstudy.tablayout.TabLayoutActivity;
 import com.materialdesignstudy.textinput.TextInputActivity;
 import com.materialdesignstudy.toolbar.ToolBarActivity;
 
@@ -86,6 +88,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void usePalette(View view) {
         startActivity(new Intent(MainActivity.this, PaletteActivity.class));
+    }
+
+    public void useTableLayout(View view) {
+        startActivity(new Intent(MainActivity.this, TabLayoutActivity.class));
+    }
+
+    public void useBottomTableLayout(View view) {
+        startActivity(new Intent(MainActivity.this, BottomTabActivity.class));
     }
 
 }
