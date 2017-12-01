@@ -5,8 +5,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.LinearLayout;
 
 import com.materialdesignstudy.R;
 
@@ -40,6 +42,11 @@ public class TabLayoutActivity extends AppCompatActivity {
         mTabLayout = (TabLayout) findViewById(R.id.id_tab_layout);
         mViewPager = (ViewPager) findViewById(R.id.id_view_pager);
 
+        // 设置分割线
+        LinearLayout linearLayout= (LinearLayout) mTabLayout.getChildAt(0);
+        linearLayout.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+        linearLayout.setDividerDrawable(ContextCompat.getDrawable(this,R.drawable.shape_tablayout_divider));
+
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mAdapter);
 
@@ -68,6 +75,7 @@ public class TabLayoutActivity extends AppCompatActivity {
         // 实现方式一
         // 设置tabLayout标签来自于pagerAdapter
         mTabLayout.setTabsFromPagerAdapter(mAdapter);
+
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter {

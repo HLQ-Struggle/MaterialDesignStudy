@@ -14,6 +14,7 @@
         app:tabBackground="@color/blue"
         app:tabGravity="center"
         app:tabIndicatorColor="@color/colorPrimary_pink"
+        app:tabIndicatorHeight="10dp"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/colorPrimary_pinkDark"
         app:tabTextColor="@color/colorPrimary_pink" />

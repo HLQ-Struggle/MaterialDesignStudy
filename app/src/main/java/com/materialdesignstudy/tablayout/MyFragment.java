@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 /**
  * Created by HLQ on 2017/11/16
+ * 测试使用Fragment
  */
 public class MyFragment extends Fragment {
 
@@ -21,7 +22,7 @@ public class MyFragment extends Fragment {
         Bundle bundle = getArguments();
         String title = bundle.getString("title");
         tv.setText(title);
-        tv.setBackgroundColor(Color.rgb((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255)));
+        tv.setBackgroundColor(Color.rgb((int) (Math.random() * 255), (int) (Math.random() * 255), (int) (Math.random() * 255)));
         return tv;
     }
 }

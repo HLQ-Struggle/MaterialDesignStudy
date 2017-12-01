@@ -14,97 +14,120 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="showSupportUse"
-            android:text="兼容控件使用" />
+            android:text="兼容控件使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="showRecycleView"
-            android:text="RecycleView使用" />
+            android:text="RecycleView使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="showChangeRecycleView"
-            android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件以及长按事件" />
+            android:text="1.RecycleView动态显示布局\n2.添加，删除item以及动画效果\n3.点击事件以及长按事件"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="addView"
-            android:text="RecycleView添加头部和底部" />
+            android:text="RecycleView添加头部和底部"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="addUseAnim"
-            android:text="RecycleView交互动画" />
+            android:text="RecycleView交互动画"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useRecyclerComplex"
-            android:text="RecycleView实现复杂布局" />
+            android:text="RecycleView实现复杂布局"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useRecyclerComplexListAndGird"
-            android:text="RecycleView实现复杂布局之List和Gird混排显示" />
+            android:text="RecycleView实现复杂布局之List和Gird混排显示"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useRecyclerComplexDiffModel"
-            android:text="RecycleView实现复杂布局之不同Model如何优雅实现" />
+            android:text="RecycleView实现复杂布局之不同Model如何优雅实现"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="userMDDrawerLayout"
-            android:text="MaterialDesign侧滑" />
+            android:text="MaterialDesign侧滑"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useNavigationView"
-            android:text="NavigationView使用" />
+            android:text="NavigationView使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useSnackBar"
-            android:text="SnackBar使用" />
+            android:text="SnackBar使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useTextInputLayout"
-            android:text="TextInputLayout使用" />
+            android:text="TextInputLayout使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useToolBar"
-            android:text="ToolBar使用" />
+            android:text="ToolBar使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="usePalette"
-            android:text="Palette调色板使用" />
+            android:text="Palette调色板使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useTableLayout"
-            android:text="TableLayout使用" />
+            android:text="TableLayout使用"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="useBottomTableLayout"
-            android:text="BottomTableLayout使用" />
+            android:text="BottomTableLayout使用"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useCardView"
+            android:text="CardView使用"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </ScrollView>

@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.materialdesignstudy.R;
+import com.materialdesignstudy.cardview.CardViewActivity;
 import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
 import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
 import com.materialdesignstudy.complexrecycler.itemtwo.ComplexTwoActivity;
@@ -96,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useBottomTableLayout(View view) {
         startActivity(new Intent(MainActivity.this, BottomTabActivity.class));
+    }
+
+    public void useCardView(View view) {
+        startActivity(new Intent(MainActivity.this, CardViewActivity.class));
     }
 
 }
