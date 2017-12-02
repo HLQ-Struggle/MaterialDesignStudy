@@ -12,6 +12,7 @@ import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
 import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
 import com.materialdesignstudy.complexrecycler.itemtwo.ComplexTwoActivity;
 import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
+import com.materialdesignstudy.floatingactionbutton.FloatingActionButtonActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
 import com.materialdesignstudy.paletter.PaletteActivity;
@@ -101,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useCardView(View view) {
         startActivity(new Intent(MainActivity.this, CardViewActivity.class));
+    }
+
+    public void useFloatingActionButton(View view) {
+        startActivity(new Intent(MainActivity.this, FloatingActionButtonActivity.class));
     }
 
 }
