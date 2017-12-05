@@ -136,6 +136,13 @@
             android:text="FloatingActionButton使用"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useCoordinatorLayout"
+            android:text="CoordinatorLayout使用"
+            android:textAllCaps="false" />
+
 
     </LinearLayout>
 </ScrollView>

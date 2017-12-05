@@ -33,7 +33,9 @@
         <activity android:name=".tablayout.TabLayoutActivity" />
         <activity android:name=".tablayout.BottomTabActivity" />
         <activity android:name=".cardview.CardViewActivity" />
-        <activity android:name=".floatingactionbutton.FloatingActionButtonActivity"></activity>
+        <activity android:name=".floatingactionbutton.FloatingActionButtonActivity" />
+        <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity" />
+        <activity android:name=".coordinatorlayout.behavior.BehaviorActivity"></activity>
     </application>
 
 </manifest>
