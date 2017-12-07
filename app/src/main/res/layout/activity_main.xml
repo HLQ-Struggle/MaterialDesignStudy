@@ -143,6 +143,12 @@
             android:text="CoordinatorLayout使用"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="useParallel"
+            android:text="平行空间动画学习"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 </ScrollView>

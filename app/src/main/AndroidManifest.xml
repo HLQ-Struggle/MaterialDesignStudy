@@ -35,7 +35,8 @@
         <activity android:name=".cardview.CardViewActivity" />
         <activity android:name=".floatingactionbutton.FloatingActionButtonActivity" />
         <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity" />
-        <activity android:name=".coordinatorlayout.behavior.BehaviorActivity"></activity>
+        <activity android:name=".coordinatorlayout.behavior.BehaviorActivity" />
+        <activity android:name=".parallel.ParallelActivity"></activity>
     </application>
 
 </manifest>

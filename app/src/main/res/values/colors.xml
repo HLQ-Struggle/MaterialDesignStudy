@@ -6,4 +6,9 @@
     <color name="mytextcolor">#F800D0</color>
     <color name="red">#FF00</color>
     <color name="blue">#000EEE</color>
+
+    <color name="bg1_green">#6DB345</color>
+    <color name="bg2_blue">#6DB3ff</color>
+    <color name="bg3_green">#6DB311</color>
+
 </resources>

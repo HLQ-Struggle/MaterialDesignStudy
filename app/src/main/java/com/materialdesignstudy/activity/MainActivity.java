@@ -17,6 +17,7 @@ import com.materialdesignstudy.floatingactionbutton.FloatingActionButtonActivity
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
 import com.materialdesignstudy.navigationview.NavigationActivity;
 import com.materialdesignstudy.paletter.PaletteActivity;
+import com.materialdesignstudy.parallel.ParallelActivity;
 import com.materialdesignstudy.snackbar.SnackBarActivity;
 import com.materialdesignstudy.tablayout.BottomTabActivity;
 import com.materialdesignstudy.tablayout.TabLayoutActivity;
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useCoordinatorLayout(View view) {
         startActivity(new Intent(MainActivity.this, CoordinatorLayoutActivity.class));
+    }
+
+    public void useParallel(View view) {
+        startActivity(new Intent(MainActivity.this, ParallelActivity.class));
     }
 
 }
