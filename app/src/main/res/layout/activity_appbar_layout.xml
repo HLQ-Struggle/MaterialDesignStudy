@@ -12,13 +12,19 @@
         android:layout_height="match_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:padding="?attr/actionBarSize" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/id_toolbar"
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary" />
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/id_fab"
@@ -26,8 +32,8 @@
         android:layout_height="58dp"
         android:layout_gravity="right|bottom"
         android:layout_margin="16dp"
-        android:onClick="displaySnackbar"
         android:background="@drawable/fag_bg"
+        android:onClick="displaySnackbar"
         android:src="@drawable/ic_love"
         app:layout_behavior="com.materialdesignstudy.coordinatorlayout.behavior.FabBehavior" />
 

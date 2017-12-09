@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.materialdesignstudy.coordinatorLayout2.AppbarLayoutActivity;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.cardview.CardViewActivity;
 import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
@@ -116,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useParallel(View view) {
         startActivity(new Intent(MainActivity.this, ParallelActivity.class));
+    }
+
+    public void useAppbarLayout(View view) {
+        startActivity(new Intent(MainActivity.this, AppbarLayoutActivity.class));
     }
 
 }

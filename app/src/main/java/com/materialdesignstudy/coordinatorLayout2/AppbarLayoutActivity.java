@@ -1,5 +1,6 @@
-package com.materialdesignstudy.coordinatorlayout.behavior;
+package com.materialdesignstudy.coordinatorLayout2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,11 +19,11 @@ import java.util.List;
 /**
  * author : HLQ
  * e-mail : 925954424@qq.com
- * time   : 2017/12/05
- * desc   :
+ * time   : 2017/12/8
+ * desc   : AppbarLayout Study
  * version: 1.0
  */
-public class BehaviorActivity extends AppCompatActivity  {
+public class AppbarLayoutActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private RecyclerView mRecyclerView;
@@ -31,7 +32,7 @@ public class BehaviorActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_behavior);
+        setContentView(R.layout.activity_appbar_layout);
         initView();
     }
 
@@ -44,14 +45,15 @@ public class BehaviorActivity extends AppCompatActivity  {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         List<String> sList = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
-            sList.add("Hi Every One " + i);
+            sList.add("Hi AppbarLayout " + i);
         }
         FabRecycleAdapter adapter = new FabRecycleAdapter(sList);
         mRecyclerView.setAdapter(adapter);
     }
 
-    public void displaySnackbar(View view){
+    public void displaySnackbar(View view) {
         Snackbar.make(view, "哈喽，你在干嘛", Snackbar.LENGTH_SHORT).show();
-    }
 
+        startActivity(new Intent(this, NestedScrollViewActivity.class));
+    }
 }

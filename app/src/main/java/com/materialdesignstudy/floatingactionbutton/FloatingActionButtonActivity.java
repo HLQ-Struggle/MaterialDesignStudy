@@ -2,6 +2,7 @@ package com.materialdesignstudy.floatingactionbutton;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -22,6 +23,8 @@ public class FloatingActionButtonActivity extends AppCompatActivity {
         ObjectAnimator animator = ObjectAnimator.ofFloat(view, "rotation", 101f, toDegree).setDuration(100);
         animator.start();
         isReverse = !isReverse;
+
+        Snackbar.make(view, "哈喽，你在干嘛", Snackbar.LENGTH_SHORT).show();
     }
 
 }

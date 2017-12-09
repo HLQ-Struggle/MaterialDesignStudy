@@ -36,7 +36,11 @@
         <activity android:name=".floatingactionbutton.FloatingActionButtonActivity" />
         <activity android:name=".coordinatorlayout.CoordinatorLayoutActivity" />
         <activity android:name=".coordinatorlayout.behavior.BehaviorActivity" />
-        <activity android:name=".parallel.ParallelActivity"></activity>
+        <activity android:name=".parallel.ParallelActivity" />
+        <activity android:name=".coordinatorLayout2.AppbarLayoutActivity" />
+        <activity android:name=".coordinatorLayout2.NestedScrollViewActivity" />
+        <activity android:name=".coordinatorLayout2.ViewPagerActivity" />
+        <activity android:name=".coordinatorLayout2.CollapsingToolbarLayoutActivity"></activity>
     </application>
 
 </manifest>
