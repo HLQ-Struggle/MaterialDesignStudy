@@ -26,4 +26,12 @@
         <!--         <item name="colorAccent">#906292</item> -->
     </style>
 
+    <style name="customBehaviorStyle">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">60dp</item>
+        <item name="android:paddingBottom">60dp</item>
+    </style>
+
 </resources>

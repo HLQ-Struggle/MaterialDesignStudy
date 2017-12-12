@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.materialdesignstudy.custombehavior.CustomBehaviorActivity">
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:background="@color/colorPrimary_pink"
+        android:padding="15dp"
+        android:text="被监听者" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@color/bg1_green"
+        android:clickable="true"
+        android:onClick="getNestedScrollView"
+        android:padding="15dp"
+        android:text="监听者"
+        app:layout_behavior="com.materialdesignstudy.custombehavior.CustomBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>

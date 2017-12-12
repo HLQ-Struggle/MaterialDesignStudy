@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.materialdesignstudy.custombehavior.NestedScrollViewAct">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#FDFD">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/bg3_green"
+        app:layout_behavior="com.materialdesignstudy.custombehavior.SyncScrollBeahvior">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+            <TextView style="@style/customBehaviorStyle" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

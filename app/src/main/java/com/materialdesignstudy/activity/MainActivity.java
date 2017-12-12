@@ -6,13 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.materialdesignstudy.coordinatorLayout2.AppbarLayoutActivity;
 import com.materialdesignstudy.R;
 import com.materialdesignstudy.cardview.CardViewActivity;
 import com.materialdesignstudy.complexrecycler.itemone.ComplexOneActivity;
 import com.materialdesignstudy.complexrecycler.itemthree.ComplexThreeActivity;
 import com.materialdesignstudy.complexrecycler.itemtwo.ComplexTwoActivity;
+import com.materialdesignstudy.coordinatorLayout2.AppbarLayoutActivity;
 import com.materialdesignstudy.coordinatorlayout.CoordinatorLayoutActivity;
+import com.materialdesignstudy.custombehavior.CustomBehaviorActivity;
 import com.materialdesignstudy.drawerlayout.DrawerLayoutActivity;
 import com.materialdesignstudy.floatingactionbutton.FloatingActionButtonActivity;
 import com.materialdesignstudy.itemtouch.ItemTouchActivity;
@@ -121,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void useAppbarLayout(View view) {
         startActivity(new Intent(MainActivity.this, AppbarLayoutActivity.class));
+    }
+
+    public void useCustomBehavior(View view) {
+        startActivity(new Intent(MainActivity.this, CustomBehaviorActivity.class));
     }
 
 }

@@ -28,7 +28,8 @@ public class FabBehavior extends FloatingActionButton.Behavior {
                                        int nestedScrollAxes) {
         // 当观察的View（RecyclerView）发生滑动的开始的时候回调的
         // nestedScrollAxes:滑动关联轴， 我们现在只关心垂直的滑动。
-        return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL || super.onStartNestedScroll(coordinatorLayout, child, directTargetChild,
+        return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL ||
+                super.onStartNestedScroll(coordinatorLayout, child, directTargetChild,
                 target, nestedScrollAxes);
     }
 

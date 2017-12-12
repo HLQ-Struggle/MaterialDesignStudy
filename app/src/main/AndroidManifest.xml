@@ -40,7 +40,9 @@
         <activity android:name=".coordinatorLayout2.AppbarLayoutActivity" />
         <activity android:name=".coordinatorLayout2.NestedScrollViewActivity" />
         <activity android:name=".coordinatorLayout2.ViewPagerActivity" />
-        <activity android:name=".coordinatorLayout2.CollapsingToolbarLayoutActivity"></activity>
+        <activity android:name=".coordinatorLayout2.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".custombehavior.CustomBehaviorActivity" />
+        <activity android:name=".custombehavior.NestedScrollViewAct"></activity>
     </application>
 
 </manifest>
