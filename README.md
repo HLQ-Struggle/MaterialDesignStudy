@@ -26,4 +26,4 @@
 
 欢迎关注LZ个人公众号~ 不定期发布博文~
 
-![](https://github.com/HLQ-Struggle/MaterialDesignStudy/blob/master/image/hlq-gzh.jpg)
+![](https://github.com/HLQ-Struggle/MaterialDesignStudy/blob/master/image/hlq_gzh.jpg)
